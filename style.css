@@ -270,6 +270,52 @@ section{
 
 }
 
+/* MATERIALS */
+.materials-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.material-card{
+  background:#101d31;
+  padding:35px;
+  border-radius:25px;
+  transition:0.3s;
+}
+
+.material-card:hover{
+  transform:translateY(-10px);
+}
+
+.material-icon{
+  width:70px;
+  height:70px;
+  background:#182844;
+  border-radius:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:28px;
+  color:#4da3ff;
+  margin-bottom:25px;
+}
+
+.material-card h3{
+  margin-bottom:15px;
+}
+
+.material-card p{
+  color:#bbb;
+  line-height:1.8;
+}
+
+.material-card a{
+  display:inline-block;
+  margin-top:25px;
+  color:#4da3ff;
+}
+
 /* PROJECT SHOWCASE */
 .project-showcase{
   display:grid;
