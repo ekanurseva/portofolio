@@ -300,6 +300,59 @@ section{
   background:#21385d;
 }
 
+/* CERTIFICATIONS */
+.certificate-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+}
+
+.certificate-card{
+  background:#101d31;
+  padding:40px;
+  border-radius:25px;
+  transition:0.4s;
+}
+
+.certificate-card:hover{
+  transform:translateY(-10px);
+}
+
+.certificate-icon{
+  width:80px;
+  height:80px;
+  background:#182844;
+  border-radius:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:34px;
+  color:#4da3ff;
+  margin-bottom:25px;
+}
+
+.certificate-year{
+  color:#4da3ff;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+.certificate-card h3{
+  margin:15px 0;
+  font-size:28px;
+}
+
+.certificate-card p{
+  color:#bbb;
+  line-height:1.9;
+}
+
+.certificate-card a{
+  display:inline-block;
+  margin-top:30px;
+  color:#4da3ff;
+}
+
 /* RESPONSIVE */
 @media(max-width:900px){
 
