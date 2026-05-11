@@ -174,98 +174,93 @@ section{
 /* ABOUT */
 .about-content{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1.2fr 1fr;
+  gap:30px;
+  align-items:start;
+}
+
+.about-skills{
+  display:flex;
+  flex-direction:column;
   gap:30px;
 }
 
 .card{
   background:#101d31;
-  padding:30px;
-  border-radius:20px;
+  padding:35px;
+  border-radius:25px;
 }
 
 .card h3{
   margin-bottom:20px;
 }
 
+/* BIO */
+.about-label{
+  color:#4da3ff;
+  letter-spacing:1px;
+  font-size:14px;
+}
+
+.about-bio h3{
+  font-size:40px;
+  margin:15px 0;
+}
+
+.about-description{
+  color:#bbb;
+  line-height:1.9;
+  margin-bottom:35px;
+}
+
+.bio-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.bio-item span{
+  color:#4da3ff;
+  font-size:14px;
+}
+
+.bio-item p{
+  margin-top:8px;
+  color:white;
+}
+
+/* SKILLS */
 .skill-list{
   display:flex;
   flex-wrap:wrap;
-  gap:10px;
+  gap:12px;
 }
 
 .skill{
   background:#182844;
-  padding:10px 15px;
-  border-radius:10px;
-}
-
-/* TEACHING EXPERIENCE */
-.teaching-card{
-  background:#101d31;
-  border-radius:30px;
-  padding:50px;
-  display:grid;
-  grid-template-columns:1fr 2fr;
-  gap:50px;
-  align-items:start;
-}
-
-.teaching-year{
-  color:#4da3ff;
-  font-weight:600;
-  letter-spacing:1px;
-}
-
-.teaching-left h3{
-  font-size:38px;
-  margin:15px 0;
-}
-
-.teaching-left h4{
-  color:#bbb;
-  font-weight:400;
-}
-
-.teaching-right p{
-  color:#bbb;
-  line-height:1.9;
-  margin-bottom:30px;
-}
-
-.teaching-points{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
-
-.point{
-  background:#182844;
-  padding:20px;
-  border-radius:16px;
-  line-height:1.6;
+  padding:10px 16px;
+  border-radius:12px;
   transition:0.3s;
 }
 
-.point:hover{
-  transform:translateY(-5px);
+.skill:hover{
   background:#21385d;
+  transform:translateY(-3px);
 }
 
 /* RESPONSIVE */
 @media(max-width:900px){
 
-  .teaching-card{
+  .about-content{
     grid-template-columns:1fr;
-    padding:30px;
   }
 
-  .teaching-left h3{
-    font-size:30px;
+  .bio-list{
+    grid-template-columns:1fr;
   }
 
-  .teaching-points{
-    grid-template-columns:1fr;
+  .about-bio h3{
+    font-size:32px;
   }
 
 }
