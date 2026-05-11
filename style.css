@@ -233,7 +233,7 @@ section{
 .skill-list{
   display:flex;
   flex-wrap:wrap;
-  gap:12px;
+  gap:7px;
 }
 
 .skill{
@@ -246,6 +246,58 @@ section{
 .skill:hover{
   background:#21385d;
   transform:translateY(-3px);
+}
+
+/* TEACHING EXPERIENCE */
+.teaching-card{
+  background:#101d31;
+  border-radius:30px;
+  padding:50px;
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:50px;
+  align-items:start;
+}
+
+.teaching-year{
+  color:#4da3ff;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+.teaching-left h3{
+  font-size:38px;
+  margin:15px 0;
+}
+
+.teaching-left h4{
+  color:#bbb;
+  font-weight:400;
+}
+
+.teaching-right p{
+  color:#bbb;
+  line-height:1.9;
+  margin-bottom:30px;
+}
+
+.teaching-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.point{
+  background:#182844;
+  padding:20px;
+  border-radius:16px;
+  line-height:1.6;
+  transition:0.3s;
+}
+
+.point:hover{
+  transform:translateY(-5px);
+  background:#21385d;
 }
 
 /* RESPONSIVE */
